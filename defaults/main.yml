@@ -24,3 +24,5 @@ users_root_password_encrypt: "sha512_crypt"
 users_root_password_chars: "ascii,numbers,digits,hexdigits,punctuation"
 # Password length
 users_root_password_length: "20"
+
+users_groups: []
