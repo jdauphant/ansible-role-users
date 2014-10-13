@@ -67,6 +67,6 @@
   user: >
         name=root
         uid=0
-        password={{ lookup('password', users_root_password_file+' chars='+users_root_password_chars+' encrypt='+users_root_password_encrypt+' length='+users_root_password_length) }}
+        password="{{ lookup('password', users_root_password_file+' chars='+users_root_password_chars+' encrypt='+users_root_password_encrypt+' length='+users_root_password_length) }}"
   when: users_root_random_password
   tags: ['users','configuration']
