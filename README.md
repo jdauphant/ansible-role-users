@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jdauphant/ansible-users.png)](https://travis-ci.org/jdauphant/ansible-role-users)
+[![Build Status](https://travis-ci.org/jdauphant/ansible-role-users.png)](https://travis-ci.org/jdauphant/ansible-role-users)
 
 # Users role
 
