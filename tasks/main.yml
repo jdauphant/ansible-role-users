@@ -35,8 +35,8 @@
     user="{{item.0.username}}" 
     key="{{item.1}}"
   with_subelements:
-    - users
-    - ssh_key
+    - "{{users}}"
+    - "{{ssh_key}}"
   tags: ['users','configuration']
 
 - name: Remove revoked SSH keys
@@ -45,8 +45,8 @@
     key="{{item.1}}"
     state="absent"
   with_nested:
-    - users
-    - users_revoked_ssh_key
+    - "{{users}}"
+    - "{{users_revoked_ssh_key}}"
   tags: ['users','configuration']
 
 - name: Deleted user removal
