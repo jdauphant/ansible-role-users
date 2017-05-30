@@ -36,7 +36,7 @@
     key="{{item.1}}"
   with_subelements:
     - "{{users}}"
-    - "{{ssh_key}}"
+    - ssh_key
   tags: ['users','configuration']
 
 - name: Remove revoked SSH keys
